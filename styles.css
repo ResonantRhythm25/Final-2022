@@ -1,0 +1,294 @@
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 0em;
+}
+div.container{
+  border: 0px transparent;
+  width: 65%;
+  margin: 0 auto 0 auto;
+}
+header{
+  text-align: center;
+  display: grid;
+  min-width: 60px;
+}
+h1{
+  font-family: "Dosis", sans-serif;
+  letter-spacing: 15px;
+  font-size: 60px;
+  font-weight: 900;
+  color: #F37F94;
+}
+h2{
+  font-family: "Dosis", sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+  letter-spacing: 15px;
+  color: #36202b;
+}
+h3{
+  font-family: "Dosis", sans-serif;
+  font-weight: 900;
+  font-size: 25px;
+  letter-spacing: 2px;
+  color: #36202b;
+}
+.slideshow{
+  margin-top: 0px;
+  display:contents;
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content:space-around;
+  width:100%;
+  position:static;
+}
+.slideshow a{
+  flex-basis: auto;
+}
+.cycle-slideshow img{
+  max-width: 100%;
+}
+nav{
+  background-color: #36202b;
+}
+.container-nav {
+  display: flex;
+}
+ul{
+  padding: 6px 16px;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+li{
+  margin-left: 2em;
+  margin: 10px 35px;
+  line-height: 2em;
+  font-family: "Dosis", sans-serif;
+  font-weight: 900;
+  letter-spacing: 2px;
+  font-variant: small-caps;
+  font-size: 20px;
+}
+a{
+  color: #f5f2f0;
+  text-decoration: none;
+  display: block;
+}
+a:hover {
+  color: #ff99a7;
+}
+.selected {
+  color: #ff99a7;
+}
+
+/*Home content*/
+.row {
+  margin: 8px -16px;
+}
+
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+div.content img{ 
+  width:100%;
+  height:100%;
+  }
+
+.content {
+  background-color: #36202b;
+  padding: 10px;
+  font-family: "Dosis", sans-serif;
+  font-weight: 900;
+  color: #015289;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+img > .column{
+  max-width:  500px;
+  max-height: 500px;
+}
+
+/*About and Contact content*/
+
+.about-section {
+  padding: 20px; 
+  font-family: 'Lato', sans-serif;
+  color:#36202b;
+  margin: auto;
+  font-weight: 100;
+  max-width: 1000px;
+
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/*Gallery content*/
+
+#gallery {
+  padding-top: 7px;
+  line-height:0;
+  column-count:5;
+  column-gap:5px;
+}
+
+#gallery img {
+  width: 100% !important;
+  height: auto !important;
+  margin-bottom:5px; 
+  filter: grayscale(100%);
+  transition: filter 1s;
+
+}
+
+#gallery img:hover {
+  filter:none;
+}
+
+/*Contacts*/
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #9e8c89; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical; 
+  font-family: 'Lato', sans-serif;
+}
+
+input[type=submit] {
+  background-color: #36202b;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+}
+
+input[type=submit]:hover {
+  background-color: #ff99a7;
+}
+
+.container_contacts {
+  border-radius: 5px;
+  background-color: #E8E2E0;
+  padding: 20px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  color:#36202b;
+}
+
+/*Footer content*/
+
+footer{
+  text-align: center;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  height: 2.4em; 
+  width: 2.4em;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 5px;
+  border-radius: 50%;
+}
+.fa-facebook {
+  background: #36202b;
+  color: #f5f2f0;
+  text-align: center;
+}
+.fa-twitter {
+  background: #36202b;
+  color: #f5f2f0;
+} 
+.fa-instagram {
+  background: #36202b;
+  color: #f5f2f0;
+}
+.fa-tumblr {
+  background: #36202b;
+  color: #f5f2f0;
+}
+
+/*Desktop*/
+@media screen and (max-width: 992px) {
+  .container-nav{
+    flex-direction: column;
+  }
+  ul {
+    flex-direction: column;
+    text-align: center;
+  }
+  li{
+    margin: 0.8em 0;
+  }
+  #gallery {
+    column-count: 4;
+  }
+}
+
+/*Tablet*/
+@media (max-width: 640px) {
+  .container-nav{
+    flex-direction: column;
+  }
+  ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  li{
+    margin: 0.8em 0;
+  }
+  #gallery {
+    column-count: 3;
+  }
+  .row, .column {
+    width: 100%
+  }
+}
+
+/*Phone*/
+@media (max-width: 480px) {
+  .container-nav{
+    flex-direction: column;
+  }
+  ul {
+    flex-direction: column;
+    text-align: center;
+  }
+  li{
+    margin: 0.8em 0;
+  }
+  #gallery {
+    column-count: 2;
+  }
+  .row, .column {
+    width: 100%
+  }
+}
